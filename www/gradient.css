@@ -1,0 +1,142 @@
+body {
+  background-color: #1a1a2e !important;
+  color: #e4e4f0 !important;
+  background: linear-gradient(to top, rgba(75, 0, 130, 0.5) 10%, rgba(26, 26, 46, 1) 70%) fixed !important; /* Deeper purple gradient */
+}
+
+
+/* Navbar Styling */
+.navbar {
+  background-color: #14141f !important;
+  border-color: #14141f !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Logo Styling */
+.navbar-brand img {
+  height: 150px; /* Increase the height of the logo */
+  margin-right: 15px; /* Space between the logo and the title */
+  vertical-align: middle; /* Align the logo vertically with the title */
+}
+
+/* Navbar Title Styling */
+.navbar-brand .navbar-title {
+  font-size: 10px; /* Make the title smaller */
+  font-family: 'Poppins', sans-serif; /* Match the theme's heading font */
+  font-weight: 600; /* Set font weight */
+  color: #e4e4f0; /* Light text color to match theme */
+  vertical-align: middle; /* Align vertically with the logo */
+}
+
+.navbar-brand, .navbar-nav > li > a {
+  color: #e4e4f0 !important;
+}
+
+/* Navbar Title Styling */
+.navbar-nav > li > a {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav > li > a:hover {
+  color: #fff !important;
+  background-color: #6A5ACD !important;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #6A5ACD;
+  border-color: #6A5ACD;
+  box-shadow: 0 4px 8px rgba(106, 90, 205, 0.5);
+}
+
+.btn-primary:hover {
+  background-color: #483D8B;
+  border-color: #483D8B;
+}
+
+/* Sidebar Panel Styling */
+.sidebarPanel {
+  background: #1a1a2e;
+  color: #e4e4f0;
+}
+
+/* Main Panel Styling */
+.mainPanel {
+  background: #1a1a2e;
+  color: #e4e4f0;
+}
+
+/* Panel Body Styling */
+.panel-body {
+  background-color: #1a1a2e;
+  color: #e4e4f0;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Sticky Footer Styling */
+footer {
+  background: linear-gradient(to right, #1a1a2e, #6A5ACD);
+  color: #e4e4f0;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  padding-bottom: 60px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 25px;
+  }
+  .navbar-nav > li > a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2C2C54; /* Dark gray for the table background */
+  color: #e4e4f0; /* Light text color */
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #6A5ACD; /* Slate blue for table borders */
+}
+
+table th {
+  background-color: #4B0082; /* Darker Indigo for table headers */
+  color: #ffffff; /* White text in headers */
+}
+
+table tr:nth-child(even) {
+  background-color: #1a1a2e; /* Slightly darker for even rows */
+}
+
+table tr:hover {
+  background-color: #6A5ACD; /* Slate blue on hover for rows */
+  color: #ffffff; /* White text on hover */
+}
