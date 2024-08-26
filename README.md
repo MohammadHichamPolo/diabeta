@@ -39,13 +39,6 @@ If you prefer running the web app locally, you can follow the following steps :
 ```R
 required_packages <- c("shiny", "ggplot2", "reshape2", "gridExtra", "tidyverse", 
                        "shinyWidgets", "multcomp", "agricolae", "dplyr", "bslib")
-# Ensure packages are installed
-
-install_if_missing <- function(pkg) {
-  if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
-}
-
-lapply(required_packages, install_if_missing)
 ```
 ### Steps
 
@@ -55,18 +48,26 @@ lapply(required_packages, install_if_missing)
    cd diabeta
 ```
 2. **Install the required packages**:
+```
+install_if_missing <- function(pkg) {
+  if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
+}
+
+lapply(required_packages, install_if_missing)
+```
 3. **Run the application**:
    - Save the app.R file and Run it or combine all files in a single file and run the known commande:
 ```
 shiny::runApp()
 ```
-### Usage
+## Usage
 
 #### 🚀 Getting Started
 **Download the Google Sheets Template:** We've prepared a structured template to ensure your data is correctly formatted. [Download Google Sheets Template](https://docs.google.com/spreadsheets/d/1Ej_6PBFx4pqYEv_2VbgJ7stdpmkrNwEaSI1FOin0VaU/edit?gid=0#gid=0)
 **Explore the Features:** Navigate through the tabs to explore various analytical tools and visualizations. 
 Our intuitive interface makes it easy to uncover trends, compare nutrient intake, and gain deeper insights into your dietary patterns.
-File Upload Requirements
+
+## File Upload Requirements
 
 For seamless analysis, please ensure your datasets are correctly formatted as CSV files. The app supports the following data inputs:
 
@@ -74,17 +75,19 @@ For seamless analysis, please ensure your datasets are correctly formatted as CS
 - **Stress Levels:** Import your CSV file to investigate variations and correlations in stress.
 - **Glucose Measurements:** Provide your glucose measurements in CSV format for detailed statistical assessment.
   
-#### Customization
+### Customization
 - User-Friendly: Designed with simplicity in mind, no advanced technical skills required.
 - Customizable Visuals: Tailor the charts and graphs to your preferences, making data interpretation a breeze.
 - Data Security: Your data stays with you. We prioritize your privacy and do not store any of your uploaded files.
-Troubleshooting
 
-##### If you encounter any issues, please refer to the following:
+## Troubleshooting
+
+#### If you encounter any issues, please refer to the following:
 
 - Check File Formatting: Ensure your CSV files are correctly formatted and match the required structure.
 - Clear Cache: Sometimes, clearing your browser's cache can resolve unexpected behavior.
-Contributing
+
+## Contributing
 
 ### We welcome contributions! Please fork the repository and submit a pull request with your changes.
 
